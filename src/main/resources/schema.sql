@@ -1,0 +1,14 @@
+CREATE TABLE client (
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  name VARCHAR(250) NOT NULL,
+  salario INT NOT NULL,
+  email VARCHAR(250) DEFAULT NULL
+);
+
+CREATE TABLE card (
+	id_client INT NOT NULL,
+	number VARCHAR(250) NOT NULL,
+	limit_card INT NOT NULL,
+	limit_using INT NOT NULL,
+	password VARCHAR(250) NOT NULL
+);
